@@ -39,6 +39,8 @@ button {
     outline: none;
     cursor: pointer;
     padding: 10px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 input {
