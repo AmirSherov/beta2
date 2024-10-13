@@ -1,7 +1,9 @@
 @use '../../../assets/styles/resets';
 @import '../../../assets/styles/setting';
 
-
+*{
+    user-select: none;
+}
 .AIpart-container {
     width: 100%;
     height: 100%;
@@ -38,11 +40,13 @@
             background-color: black;
             padding: 15px 10px 15px 10px;
             border-radius: 15px;
+            user-select: none;
 
             span:nth-child(1) {
                 background-color: $violet;
                 padding: 8px;
                 border-radius: 15px;
+                user-select: none;
             }
         }
 
@@ -65,6 +69,7 @@
 
         .AIpart-button {
             z-index: 30;
+            user-select: none;
 
             button {
                 color: black;
@@ -72,9 +77,11 @@
                 padding: 10px;
                 border-radius: 15px;
                 font-weight: 900;
+                user-select: none;
 
                 &:active {
                     transform: scale(0.8);
+                    user-select: none;
                 }
             }
         }
@@ -95,6 +102,7 @@
             left: 11%;
             top: 85%;
             margin-top: 40px;
+            user-select: none;
 
             img {
                 width: 100%;
@@ -109,6 +117,7 @@
             left: 11%;
             top: 125.9%;
             height: 300px;
+            user-select: none;
             margin-top: 40px;
 
             img {
@@ -173,21 +182,22 @@
                 width: 400px;
             }
         }
-            .AIpart2 {
 
-                .AIpart2-img1 {
-                    width: 600px;
-                    left: 9%;
-                    top: 86%;
-                    height: 450px;
-                }
+        .AIpart2 {
 
-                .AIpart2-img2 {
-                    width: 600px;
-                    left: 9%;
-                    top: 108.4%;
-                }
-            
+            .AIpart2-img1 {
+                width: 600px;
+                left: 9%;
+                top: 86%;
+                height: 450px;
+            }
+
+            .AIpart2-img2 {
+                width: 600px;
+                left: 9%;
+                top: 108.4%;
+            }
+
         }
 
         @media (max-width:500px) {
@@ -209,6 +219,7 @@
             }
         }
     }
+
     @media (max-width:390px) {
         .AIpart-main-info {
             font-size: 10px;
@@ -218,14 +229,17 @@
                 left: -8%;
                 height: 500px;
             }
+
             .AIpart-text1 {
                 font-size: 40px;
                 width: 300px;
             }
+
             .AIpart-text2 {
                 width: 300px;
             }
         }
+
         .AIpart2 {
 
             .AIpart2-img1 {
