@@ -1,0 +1,223 @@
+@use "../../../assets/styles/resets";
+@import "../../../assets/styles/setting";
+*{
+    outline: 1px solid red;
+}
+.Acsions-Container {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    color: $light;
+    gap: 40px;
+
+    .part1 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+
+        .leftSide {
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            img {
+                width: 60%;
+                margin-left: 80px;
+                height: 45%;
+                margin-top: 40px;
+                margin-bottom: 70px;
+            }
+
+            .text1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                width: 200px;
+                margin-left: 40px;
+            }
+
+            .text2 {
+                font-size: 15px;
+                margin-left: 40px;
+                width: 300px;
+                color: gray;
+            }
+        }
+
+        .rightSide {
+            width: 70%;
+            padding: 10px;
+            min-width: 360px;
+            height: 100%;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .text1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                width: 250px;
+                position: relative;
+                top: -130px;
+                margin-left: 40px;
+            }
+
+            .text2 {
+                font-size: 15px;
+                margin-left: 40px;
+                width: 300px;
+                color: gray;
+                position: relative;
+                top: -120px;
+            }
+        }
+    }
+
+    .part2 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        width:79.5%;
+        height: 100%;
+        gap: 30px;
+
+        .leftSide {
+            width: 100%;
+            padding: 10px;
+            height: 100%;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .text1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                width: 250px;
+                position: relative;
+                top: -130px;
+                margin-left: 40px;
+            }
+
+            .text2 {
+                font-size: 15px;
+                margin-left: 40px;
+                width: 300px;
+                color: gray;
+                position: relative;
+                top: -120px;
+            }
+        }
+
+        .rightSide {
+            border: 1px solid gray;
+            border-radius: 10px;
+            height: 100%;
+
+            img {
+                width: 70%;
+                margin-left: 60px;
+                height: 70%;
+                margin-top: 0px;
+                
+            }
+
+            .text1 {
+                font-size: 20px;
+                margin-bottom: 0px;
+                width: 200px;
+                margin-left: 40px;
+            }
+
+            .text2 {
+                font-size: 15px;
+                margin-left: 40px;
+                width: 300px;
+                color: gray;
+            }
+        }
+    }
+    @media (max-width:1000px) {
+        .part1 {
+            display: flex;
+            flex-direction: column;
+            .leftSide{
+                width: 80%;
+                img{
+                    width: 60%;
+                    margin-left: 80px;
+                }
+            }
+            .rightSide{
+                width: 80%;
+                padding-top: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .part2 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media (max-width:390px) {
+        .part1 {
+            display: flex;
+            flex-direction: column;
+            .leftSide{
+                width: 100%;
+                img{
+                    width: 60%;
+                    margin-left: 70px;
+                }
+                .text2{
+                    width: 250px;
+                }
+            }
+            .rightSide{
+                min-width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .text1{
+                    top: 0px;
+                    width: 230px;
+                }
+                .text2{
+                    top: 0px;
+                    width: 200px;
+                }
+            }
+        }
+        .part2 {
+            display: flex;
+            flex-direction: column;
+            .leftSide{
+                width: 125%;
+                .text1{
+                    width: 200px;
+                    top: 0;
+                }
+                .text2{
+                    width: 230px;
+                    top: 0;
+                }
+            }
+            .rightSide{
+                width: 125%;
+                .text2{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

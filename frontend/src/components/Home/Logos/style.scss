@@ -1,0 +1,33 @@
+@use '../../../assets/styles/resets';
+@import '../../../assets/styles/setting';
+
+.Logos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 30px;
+    width: 60%;
+    margin: 40px auto;
+    margin-top: 40px;
+    div{
+        padding: 10px;
+        border: 1px solid gray;
+        text-align: center;
+        border-radius: 10px;
+        @include darken_bg_on_hover(#87CEEB, 20%);
+    }
+    @media (max-width:900px) {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        
+    }
+    @media (max-width:390px) {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        div{
+            width: 165px;
+            height: 65px;
+        }
+    }
+}
+
